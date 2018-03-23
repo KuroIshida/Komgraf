@@ -1,4 +1,4 @@
-
+//creating windows size
 void setup() {
   size(1080, 900);
   smooth();
@@ -7,6 +7,7 @@ void setup() {
   rect(0, 0, 900, 900);
   int X = -15;
   int Y = 15;
+  //creating cartesian canvas
   for (int y = 0; y <900; y +=30 ) {
     line (0, y, 900, y);
     String yy = str(Y);
@@ -27,6 +28,8 @@ void setup() {
   line(0, 450, 900, 450);
   line(450, 0, 450, 900);
 }
+//end of creating windows
+//draw vector
 void draw() {
   float x =3 ;
   float y =4 ;
@@ -53,7 +56,6 @@ void draw() {
   float X2 = 450 + (x2*30);
   float Y2 = 450 - (y2*30);
   line(450, 450, X2, Y2);
-  
   float x3 = x+x2;
   float y3 = y+y2;
   float X3 = 450 + (x3*30);
