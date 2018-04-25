@@ -14,69 +14,94 @@
  * =========================================================
  */
 
-public void textarea1_change1(GTextArea source, GEvent event) { //_CODE_:textarea1:971488:
-  println("textarea1 - GTextArea >> GEvent." + event + " @ " + millis());
-} //_CODE_:textarea1:971488:
-
-public void button1_click1(GButton source, GEvent event) { //_CODE_:translateButton:745418:
-  println("translateButton - GButton >> GEvent." + event + " @ " + millis());
+public void translasi(GButton source, GEvent event) { //_CODE_:translateButton:745418:
+String x1 = translateX.getText();
+int x = Integer.parseInt(x1);
+String y1 = translateY.getText();
+int y = Integer.parseInt(y1);
+translate(x,y);
 } //_CODE_:translateButton:745418:
 
-public void button2_click1(GButton source, GEvent event) { //_CODE_:Rotation:688787:
-  println("Rotation - GButton >> GEvent." + event + " @ " + millis());
+public void rotasi(GButton source, GEvent event) { //_CODE_:Rotation:688787:
+String x1 = rotationX.getText();
+int x = Integer.parseInt(x1);
+String y1 = rotationY.getText();
+int y = Integer.parseInt(y1);
+rotateX(x);
+rotateY(y);
 } //_CODE_:Rotation:688787:
 
-public void textfield1_change1(GTextField source, GEvent event) { //_CODE_:translateX:662246:
-  println("translateX - GTextField >> GEvent." + event + " @ " + millis());
+public void translasiX(GTextField source, GEvent event) { //_CODE_:translateX:662246:
+
 } //_CODE_:translateX:662246:
 
-public void textfield2_change1(GTextField source, GEvent event) { //_CODE_:translateY:794524:
+public void translasiY(GTextField source, GEvent event) { //_CODE_:translateY:794524:
   println("translateY - GTextField >> GEvent." + event + " @ " + millis());
 } //_CODE_:translateY:794524:
 
-public void textfield1_change2(GTextField source, GEvent event) { //_CODE_:rotationY:453161:
+public void rotasiY(GTextField source, GEvent event) { //_CODE_:rotationY:453161:
   println("rotationY - GTextField >> GEvent." + event + " @ " + millis());
 } //_CODE_:rotationY:453161:
 
-public void textfield2_change2(GTextField source, GEvent event) { //_CODE_:rotationX:614159:
+public void rotasiX(GTextField source, GEvent event) { //_CODE_:rotationX:614159:
   println("rotationX - GTextField >> GEvent." + event + " @ " + millis());
 } //_CODE_:rotationX:614159:
 
-public void button1_click2(GButton source, GEvent event) { //_CODE_:scaling:779376:
-  println("scaling - GButton >> GEvent." + event + " @ " + millis());
+public void skala(GButton source, GEvent event) { //_CODE_:scaling:779376:
+String x1 = scalingX.getText();
+int x = Integer.parseInt(x1);
+String y1 = scalingY.getText();
+int y = Integer.parseInt(y1);
+scale(x,y);
 } //_CODE_:scaling:779376:
 
-public void textfield1_change3(GTextField source, GEvent event) { //_CODE_:scalingX:703502:
+public void skalaX(GTextField source, GEvent event) { //_CODE_:scalingX:703502:
   println("scalingX - GTextField >> GEvent." + event + " @ " + millis());
 } //_CODE_:scalingX:703502:
 
-public void textfield2_change3(GTextField source, GEvent event) { //_CODE_:scalingY:955386:
+public void skalaY(GTextField source, GEvent event) { //_CODE_:scalingY:955386:
   println("scalingY - GTextField >> GEvent." + event + " @ " + millis());
 } //_CODE_:scalingY:955386:
 
-public void button1_click3(GButton source, GEvent event) { //_CODE_:Shear:248649:
-  println("Shear - GButton >> GEvent." + event + " @ " + millis());
+public void shear(GButton source, GEvent event) { //_CODE_:Shear:248649:
+String x1 = sheaRX.getText();
+int x = Integer.parseInt(x1);
+String y1 = sheaRY.getText();
+int y = Integer.parseInt(y1);
+shearX(x);
+shearY(y);
 } //_CODE_:Shear:248649:
 
-public void textfield1_change4(GTextField source, GEvent event) { //_CODE_:sheaRX:925329:
+public void shearingX(GTextField source, GEvent event) { //_CODE_:sheaRX:925329:
   println("sheaRX - GTextField >> GEvent." + event + " @ " + millis());
 } //_CODE_:sheaRX:925329:
 
-public void textfield2_change4(GTextField source, GEvent event) { //_CODE_:sheaRY:620668:
+public void shearingY(GTextField source, GEvent event) { //_CODE_:sheaRY:620668:
   println("sheaRY - GTextField >> GEvent." + event + " @ " + millis());
 } //_CODE_:sheaRY:620668:
 
-public void button1_click4(GButton source, GEvent event) { //_CODE_:refleksi:608289:
-  println("refleksi - GButton >> GEvent." + event + " @ " + millis());
+public void reflect(GButton source, GEvent event) { //_CODE_:refleksi:608289:
+String x1 = reflectX.getText();
+int x = Integer.parseInt(x1);
+String y1 = reflectY.getText();
+int y = Integer.parseInt(y1);
 } //_CODE_:refleksi:608289:
 
-public void textfield3_change1(GTextField source, GEvent event) { //_CODE_:reflectX:340674:
+public void refleksiX(GTextField source, GEvent event) { //_CODE_:reflectX:340674:
   println("reflectX - GTextField >> GEvent." + event + " @ " + millis());
 } //_CODE_:reflectX:340674:
 
-public void textfield4_change1(GTextField source, GEvent event) { //_CODE_:reflectY:737224:
+public void reflaksiY(GTextField source, GEvent event) { //_CODE_:reflectY:737224:
   println("reflectY - GTextField >> GEvent." + event + " @ " + millis());
 } //_CODE_:reflectY:737224:
+
+public void textarea1_change1(GTextArea source, GEvent event) { //_CODE_:textarea1:466787:
+  println("textarea1 - GTextArea >> GEvent." + event + " @ " + millis());
+} //_CODE_:textarea1:466787:
+
+public void translation(GButton source, GEvent event) { //_CODE_:translat:715763:
+  println("translat - GButton >> GEvent." + event + " @ " + millis());
+} //_CODE_:translat:715763:
 
 
 
@@ -87,65 +112,70 @@ public void createGUI(){
   G4P.setGlobalColorScheme(GCScheme.BLUE_SCHEME);
   G4P.setCursor(ARROW);
   surface.setTitle("Sketch Window");
-  textarea1 = new GTextArea(this, 0, 0, 900, 900, G4P.SCROLLBARS_NONE);
-  textarea1.setLocalColorScheme(GCScheme.SCHEME_15);
-  textarea1.setOpaque(true);
-  textarea1.addEventHandler(this, "textarea1_change1");
-  translateButton = new GButton(this, 920, 20, 170, 30);
+  translateButton = new GButton(this, 1513, 20, 170, 30);
   translateButton.setText("TRANSLASI");
   translateButton.setTextBold();
-  translateButton.addEventHandler(this, "button1_click1");
+  translateButton.addEventHandler(this, "translasi");
   Rotation = new GButton(this, 920, 110, 170, 30);
   Rotation.setText("ROTASI");
   Rotation.setTextBold();
-  Rotation.addEventHandler(this, "button2_click1");
+  Rotation.addEventHandler(this, "rotasi");
   translateX = new GTextField(this, 920, 60, 80, 30, G4P.SCROLLBARS_NONE);
+  translateX.setText("Koordinat X");
   translateX.setOpaque(true);
-  translateX.addEventHandler(this, "textfield1_change1");
+  translateX.addEventHandler(this, "translasiX");
   translateY = new GTextField(this, 1010, 60, 80, 30, G4P.SCROLLBARS_NONE);
+  translateY.setText("Koordinat Y");
   translateY.setOpaque(true);
-  translateY.addEventHandler(this, "textfield2_change1");
+  translateY.addEventHandler(this, "translasiY");
   rotationY = new GTextField(this, 1010, 150, 80, 30, G4P.SCROLLBARS_NONE);
   rotationY.setOpaque(true);
-  rotationY.addEventHandler(this, "textfield1_change2");
+  rotationY.addEventHandler(this, "rotasiY");
   rotationX = new GTextField(this, 920, 150, 80, 30, G4P.SCROLLBARS_NONE);
   rotationX.setOpaque(true);
-  rotationX.addEventHandler(this, "textfield2_change2");
+  rotationX.addEventHandler(this, "rotasiX");
   scaling = new GButton(this, 920, 200, 170, 30);
   scaling.setText("SKALA");
   scaling.setTextBold();
-  scaling.addEventHandler(this, "button1_click2");
+  scaling.addEventHandler(this, "skala");
   scalingX = new GTextField(this, 920, 240, 80, 30, G4P.SCROLLBARS_NONE);
   scalingX.setOpaque(true);
-  scalingX.addEventHandler(this, "textfield1_change3");
+  scalingX.addEventHandler(this, "skalaX");
   scalingY = new GTextField(this, 1010, 240, 80, 30, G4P.SCROLLBARS_NONE);
   scalingY.setOpaque(true);
-  scalingY.addEventHandler(this, "textfield2_change3");
+  scalingY.addEventHandler(this, "skalaY");
   Shear = new GButton(this, 920, 290, 170, 30);
   Shear.setText("SHEAR");
   Shear.setTextBold();
-  Shear.addEventHandler(this, "button1_click3");
+  Shear.addEventHandler(this, "shear");
   sheaRX = new GTextField(this, 920, 330, 80, 30, G4P.SCROLLBARS_NONE);
   sheaRX.setOpaque(true);
-  sheaRX.addEventHandler(this, "textfield1_change4");
+  sheaRX.addEventHandler(this, "shearingX");
   sheaRY = new GTextField(this, 1010, 330, 80, 30, G4P.SCROLLBARS_NONE);
   sheaRY.setOpaque(true);
-  sheaRY.addEventHandler(this, "textfield2_change4");
+  sheaRY.addEventHandler(this, "shearingY");
   refleksi = new GButton(this, 920, 380, 170, 30);
   refleksi.setText("REFLEKSI");
   refleksi.setTextBold();
-  refleksi.addEventHandler(this, "button1_click4");
+  refleksi.addEventHandler(this, "reflect");
   reflectX = new GTextField(this, 920, 420, 80, 30, G4P.SCROLLBARS_NONE);
   reflectX.setOpaque(true);
-  reflectX.addEventHandler(this, "textfield3_change1");
+  reflectX.addEventHandler(this, "refleksiX");
   reflectY = new GTextField(this, 1010, 420, 80, 30, G4P.SCROLLBARS_NONE);
   reflectY.setOpaque(true);
-  reflectY.addEventHandler(this, "textfield4_change1");
+  reflectY.addEventHandler(this, "reflaksiY");
+  textarea1 = new GTextArea(this, 0, 0, 900, 900, G4P.SCROLLBARS_NONE);
+  textarea1.setLocalColorScheme(GCScheme.SCHEME_8);
+  textarea1.setOpaque(true);
+  textarea1.addEventHandler(this, "textarea1_change1");
+  translat = new GButton(this, 920, 20, 170, 30);
+  translat.setText("TRANSLASI");
+  translat.setTextBold();
+  translat.addEventHandler(this, "translation");
 }
 
 // Variable declarations 
 // autogenerated do not edit
-GTextArea textarea1; 
 GButton translateButton; 
 GButton Rotation; 
 GTextField translateX; 
@@ -161,3 +191,5 @@ GTextField sheaRY;
 GButton refleksi; 
 GTextField reflectX; 
 GTextField reflectY; 
+GTextArea textarea1; 
+GButton translat; 
